@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: moderation
+    database: hate-speech-adv
+    schema: moderation
+    tables:
+      - name: classifications_raw

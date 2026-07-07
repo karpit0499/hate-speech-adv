@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: stg_classifications
+    columns:
+      - name: message_id
+        tests: [not_null]
+      - name: label
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['hate_speech', 'offensive', 'neither']

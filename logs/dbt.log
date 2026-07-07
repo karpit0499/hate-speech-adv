@@ -1,0 +1,155 @@
+[0m21:17:27.078256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114441400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114584e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114584aa0>]}
+
+
+============================== 21:17:27.080455 | 65cbc04b-38b9-4014-a309-ebc63a956246 ==============================
+[0m21:17:27.080455 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:17:27.080686 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'empty': 'None', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'no_print': 'None', 'introspect': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init hate_speech', 'version_check': 'True', 'static_parser': 'True', 'log_format': 'default', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/kumararpit/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'quiet': 'False', 'partial_parse': 'True', 'printer_width': '80', 'fail_fast': 'False', 'warn_error': 'None'}
+[0m21:17:27.087674 [info ] [MainThread]: Creating dbt configuration folder at /Users/kumararpit/.dbt
+[0m21:17:27.088379 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:17:27.091003 [info ] [MainThread]: 
+Your new dbt project "hate_speech" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:17:27.091136 [info ] [MainThread]: Setting up your profile.
+[0m21:18:36.641135 [info ] [MainThread]: Profile hate_speech written to /Users/kumararpit/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:18:36.642835 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 69.595436, "process_in_blocks": "0", "process_kernel_time": 0.281786, "process_mem_max_rss": "266846208", "process_out_blocks": "0", "process_user_time": 1.477008}
+[0m21:18:36.644156 [debug] [MainThread]: Command `dbt init` succeeded at 21:18:36.643953 after 69.60 seconds
+[0m21:18:36.644708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x137ea0a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x137f04440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137ed340>]}
+[0m21:18:36.645251 [debug] [MainThread]: Flushing usage events
+[0m21:18:37.219587 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:20:34.517412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fc85c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a91790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a91400>]}
+
+
+============================== 21:20:34.519835 | 74f2f6de-fcf2-4d9b-8099-de8f0706b0b4 ==============================
+[0m21:20:34.519835 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:20:34.520071 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'log_format': 'default', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'empty': 'None', 'invocation_command': 'dbt debug', 'debug': 'False', 'static_parser': 'True', 'profiles_dir': '/Users/kumararpit/.dbt', 'cache_selected_only': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'target_path': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'no_print': 'None'}
+[0m21:20:34.527345 [info ] [MainThread]: dbt version: 1.11.12
+[0m21:20:34.527470 [info ] [MainThread]: python version: 3.12.10
+[0m21:20:34.527568 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+[0m21:20:34.527654 [info ] [MainThread]: os info: macOS-26.5.2-arm64-arm-64bit
+[0m21:20:35.408401 [info ] [MainThread]: Using profiles dir at /Users/kumararpit/.dbt
+[0m21:20:35.408610 [info ] [MainThread]: Using profiles.yml file at /Users/kumararpit/.dbt/profiles.yml
+[0m21:20:35.408725 [info ] [MainThread]: Using dbt_project.yml file at /Users/kumararpit/dev/hate-speech-adv/dbt_project.yml
+[0m21:20:35.408823 [info ] [MainThread]: adapter type: bigquery
+[0m21:20:35.408918 [info ] [MainThread]: adapter version: 1.11.3
+[0m21:20:35.409028 [info ] [MainThread]: Configuration:
+[0m21:20:35.409111 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:20:35.409202 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:20:35.409287 [info ] [MainThread]: Required dependencies:
+[0m21:20:35.409426 [debug] [MainThread]: Executing "git --help"
+[0m21:20:35.461823 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:20:35.462213 [debug] [MainThread]: STDERR: "b''"
+[0m21:20:35.462358 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:20:35.462478 [info ] [MainThread]: Connection:
+[0m21:20:35.462618 [info ] [MainThread]:   method: oauth
+[0m21:20:35.462712 [info ] [MainThread]:   database: hate-speech-adv
+[0m21:20:35.462792 [info ] [MainThread]:   execution_project: hate-speech-adv
+[0m21:20:35.462874 [info ] [MainThread]:   schema: moderation
+[0m21:20:35.462950 [info ] [MainThread]:   location: EU
+[0m21:20:35.463028 [info ] [MainThread]:   priority: interactive
+[0m21:20:35.463109 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m21:20:35.463184 [info ] [MainThread]:   impersonate_service_account: None
+[0m21:20:35.463264 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m21:20:35.463340 [info ] [MainThread]:   job_retries: 1
+[0m21:20:35.463413 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m21:20:35.463497 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m21:20:35.463572 [info ] [MainThread]:   timeout_seconds: 300
+[0m21:20:35.463648 [info ] [MainThread]:   client_id: None
+[0m21:20:35.463724 [info ] [MainThread]:   token_uri: None
+[0m21:20:35.463798 [info ] [MainThread]:   compute_region: None
+[0m21:20:35.463874 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m21:20:35.463951 [info ] [MainThread]:   gcs_bucket: None
+[0m21:20:35.464023 [info ] [MainThread]:   dataproc_batch: None
+[0m21:20:35.464274 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m21:20:35.564363 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m21:20:35.564623 [debug] [MainThread]: On debug: select 1 as id
+[0m21:20:35.564778 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:20:36.874612 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hate-speech-adv&j=bq:EU:75ec0241-96aa-4a87-8e02-c1200e84f996&page=queryresults
+[0m21:20:37.053909 [debug] [MainThread]: SQL status: OK in 0.178 seconds
+[0m21:20:37.241376 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:20:37.241916 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:20:37.242197 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/kumararpit/dev/hate-speech-adv/dbt_project.yml> not found
+
+[0m21:20:37.242714 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.7562277, "process_in_blocks": "0", "process_kernel_time": 0.307251, "process_mem_max_rss": "276070400", "process_out_blocks": "0", "process_user_time": 1.463983}
+[0m21:20:37.243147 [debug] [MainThread]: Command `dbt debug` failed at 21:20:37.243053 after 2.76 seconds
+[0m21:20:37.243462 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:20:37.243749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068577a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114e33860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106757a10>]}
+[0m21:20:37.244102 [debug] [MainThread]: Flushing usage events
+[0m21:20:37.828952 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:21:27.892284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9186e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b962ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b962720>]}
+
+
+============================== 21:21:27.894667 | 896e43d9-655c-47d8-a884-718962fcae08 ==============================
+[0m21:21:27.894667 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:21:27.894908 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug', 'version_check': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'target_path': 'None', 'profiles_dir': '/Users/kumararpit/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'empty': 'None', 'write_json': 'True', 'debug': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'printer_width': '80', 'introspect': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False'}
+[0m21:21:27.901994 [info ] [MainThread]: dbt version: 1.11.12
+[0m21:21:27.902121 [info ] [MainThread]: python version: 3.12.10
+[0m21:21:27.902216 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+[0m21:21:27.902301 [info ] [MainThread]: os info: macOS-26.5.2-arm64-arm-64bit
+[0m21:21:28.731567 [info ] [MainThread]: Using profiles dir at /Users/kumararpit/.dbt
+[0m21:21:28.731777 [info ] [MainThread]: Using profiles.yml file at /Users/kumararpit/.dbt/profiles.yml
+[0m21:21:28.731887 [info ] [MainThread]: Using dbt_project.yml file at /Users/kumararpit/dev/hate-speech-adv/dbt_project.yml
+[0m21:21:28.731977 [info ] [MainThread]: adapter type: bigquery
+[0m21:21:28.732072 [info ] [MainThread]: adapter version: 1.11.3
+[0m21:21:28.732183 [info ] [MainThread]: Configuration:
+[0m21:21:28.732267 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:21:28.732353 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:21:28.732442 [info ] [MainThread]: Required dependencies:
+[0m21:21:28.732574 [debug] [MainThread]: Executing "git --help"
+[0m21:21:28.745718 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:21:28.746054 [debug] [MainThread]: STDERR: "b''"
+[0m21:21:28.746177 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:21:28.746291 [info ] [MainThread]: Connection:
+[0m21:21:28.746400 [info ] [MainThread]:   method: oauth
+[0m21:21:28.746484 [info ] [MainThread]:   database: hate-speech-adv
+[0m21:21:28.746561 [info ] [MainThread]:   execution_project: hate-speech-adv
+[0m21:21:28.746644 [info ] [MainThread]:   schema: moderation
+[0m21:21:28.746720 [info ] [MainThread]:   location: EU
+[0m21:21:28.746798 [info ] [MainThread]:   priority: interactive
+[0m21:21:28.746881 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m21:21:28.746957 [info ] [MainThread]:   impersonate_service_account: None
+[0m21:21:28.747033 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m21:21:28.747108 [info ] [MainThread]:   job_retries: 1
+[0m21:21:28.747183 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m21:21:28.747261 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m21:21:28.747335 [info ] [MainThread]:   timeout_seconds: 300
+[0m21:21:28.747410 [info ] [MainThread]:   client_id: None
+[0m21:21:28.747488 [info ] [MainThread]:   token_uri: None
+[0m21:21:28.747564 [info ] [MainThread]:   compute_region: None
+[0m21:21:28.747638 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m21:21:28.747715 [info ] [MainThread]:   gcs_bucket: None
+[0m21:21:28.747787 [info ] [MainThread]:   dataproc_batch: None
+[0m21:21:28.748005 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m21:21:28.817511 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m21:21:28.817818 [debug] [MainThread]: On debug: select 1 as id
+[0m21:21:28.817989 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:21:29.816132 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=hate-speech-adv&j=bq:EU:e71d3f8c-b892-425d-81e7-c65be840a104&page=queryresults
+[0m21:21:29.993593 [debug] [MainThread]: SQL status: OK in 0.176 seconds
+[0m21:21:30.207244 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:21:30.207851 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:21:30.208164 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/kumararpit/dev/hate-speech-adv/dbt_project.yml> not found
+
+[0m21:21:30.208639 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.3463314, "process_in_blocks": "0", "process_kernel_time": 0.28751, "process_mem_max_rss": "277135360", "process_out_blocks": "0", "process_user_time": 1.437778}
+[0m21:21:30.209073 [debug] [MainThread]: Command `dbt debug` failed at 21:21:30.208982 after 2.35 seconds
+[0m21:21:30.209403 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:21:30.209710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adc1370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1290ffa70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8fb1a0>]}
+[0m21:21:30.210078 [debug] [MainThread]: Flushing usage events
+[0m21:21:30.679401 [debug] [MainThread]: An error was encountered while trying to flush usage events

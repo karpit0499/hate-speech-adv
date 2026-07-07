@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Terraform — state can hold secrets, .terraform is huge
+infra/.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Credentials — never commit these
+*-key.json
+service-account*.json
+.env
+
+# OS junk
+.DS_Store
