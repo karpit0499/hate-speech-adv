@@ -152,9 +152,9 @@ Benchmarked against a hand-verified, balanced 180-row eval set (60 `hate_speech`
 
 | Model | Accuracy |
 |-------|----------|
-| `gemini-3.1-flash-lite` | _<fill in from your run>_ |
-| `gemini-2.5-flash` | _<fill in from your run>_ |
-| `ollama:llama3` (previous local setup) | _<fill in from your run>_ |
+| `gemini-3.1-flash-lite` | 96% |
+| `gemini-2.5-flash` | 100% |
+| `ollama:llama3` (previous local setup) | 88% |
 
 Run it yourself:
 
