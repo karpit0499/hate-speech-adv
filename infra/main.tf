@@ -73,6 +73,18 @@ resource "google_bigquery_table" "classifications" {
   ])
 }
 
+resource "google_bigquery_table" "eval_runs" {
+  dataset_id          = google_bigquery_dataset.moderation.dataset_id
+  table_id            = "eval_runs"
+  deletion_protection = false
+  schema = jsonencode([
+    { name = "run_at",   type = "TIMESTAMP" },
+    { name = "model",    type = "STRING" },
+    { name = "accuracy", type = "FLOAT" },
+    { name = "n",        type = "INTEGER" },
+  ])
+}
+
 # A service account for the worker to use (least-privilege identity)
 resource "google_service_account" "worker" {
   account_id   = "classifier-worker"
