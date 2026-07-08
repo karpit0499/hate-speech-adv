@@ -41,18 +41,18 @@ This is a detailed, every-command walkthrough — each step is spelled out, and 
 
 ## What you'll learn (and why it matters)
 
-| Skill | Where you learn it | Job relevance |
-|-------|--------------------|---------------|
-| Infrastructure as Code (Terraform) | Phase 1 | Very high — DevOps/platform standard |
-| Vertex AI + IAM/service accounts | Phase 2 | High — proper GCP ML |
-| Event-driven architecture (Pub/Sub) | Phase 3 | High — data engineering |
-| Serverless & containers (Cloud Run, Docker) | Phase 3–4 | High |
-| Managed databases (Cloud SQL) + Secret Manager | Phase 4 | Medium–high |
-| Embeddings & vector search | Phase 5 | High — GenAI |
-| Analytics engineering (dbt + BigQuery) | Phase 6 | High — data roles |
-| BI & observability (Looker Studio, Cloud Monitoring) | Phase 7 | Medium–high |
-| CI/CD (GitHub Actions, keyless auth) | Phase 8 | High |
-| Model evaluation & drift monitoring | Phase 9 | High — MLOps |
+| Skill | Where you learn it |
+|-------|--------------------|
+| Infrastructure as Code (Terraform) | Phase 1 |
+| Vertex AI + IAM/service accounts | Phase 2 |
+| Event-driven architecture (Pub/Sub) | Phase 3 |
+| Serverless & containers (Cloud Run, Docker) | Phase 3–4 |
+| Managed databases (Cloud SQL) + Secret Manager | Phase 4 |
+| Embeddings & vector search | Phase 5 |
+| Analytics engineering (dbt + BigQuery) | Phase 6 |
+| BI & observability (Looker Studio, Cloud Monitoring) | Phase 7 |
+| CI/CD (GitHub Actions, keyless auth) | Phase 8 |
+| Model evaluation & drift monitoring | Phase 9 |
 
 > **Model note:** classification uses a **Flash-Lite** tier model — this guide uses **`gemini-3.1-flash-lite`**, called with **`location="global"`** on Vertex AI (regional endpoints 404 for Gemini 3.x). Embeddings use **`gemini-embedding-001`**. Model IDs and the `-preview`/stable suffix churn often — verify the current ID in Google's docs before you build, and swap it in everywhere it appears.
 
