@@ -246,12 +246,6 @@ For honesty and reproducibility, these grants were made by hand outside Terrafor
 
 ---
 
-## Credits
-
-The v2 direction above comes from an external review by **Andrejs Stepanovs** (July 2026), who read the repo cold and was right about most of it.
-
----
-
 ## Documentation
 
 - **[Technical documentation](./TECHNICAL_DOCUMENTATION.md)** — architecture, data model, IAM/security model, component reference, and an operations runbook.
